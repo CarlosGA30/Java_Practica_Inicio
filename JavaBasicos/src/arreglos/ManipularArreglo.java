@@ -7,21 +7,21 @@ package arreglos;
 
 public class ManipularArreglo {
 	public static void main(String[] args) {
-//		int[] numEnteros=new int[]{1, 6, 45, 53, 80, 102, 145, 326, 450, 892};
-		int[] numEnteros=new int[10];
-		for (int i = 0; i < numEnteros.length; i++)
-			numEnteros[i]=(int)(Math.random()*1000);
+		int[] numEnteros=new int[]{1, 6, 45, 53, 80, 102, 145, 326, 450, 892};
+//		int[] numEnteros=new int[10];
+//		for (int i = 0; i < numEnteros.length; i++)
+//			numEnteros[i]=(int)(Math.random()*1000);
 
 		int sumPar=0;
 		int sumInpar=0;
 		System.out.println("\nla Suma de los Numeros inpares y pares del arreglo es: ");
-		for (int i = 0; i < numEnteros.length; i++) {
-			System.out.print(numEnteros[i]+" ");
-			if(numEnteros[i]%2==0) {
-				sumPar+=numEnteros[i];
+		for (int num:numEnteros) {
+			System.out.print(num+" ");
+			if(num%2==0) {
+				sumPar+=num;
 			}
 			else {
-				sumInpar+=numEnteros[i];
+				sumInpar+=num;
 			}
 		}
 		System.out.println("\nla Suma de los Numeros inpares y pares del arreglo es: ");
