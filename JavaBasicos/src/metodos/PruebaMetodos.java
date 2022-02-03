@@ -7,7 +7,10 @@ public class PruebaMetodos {
 		metodoPrueba.a=10;
 		metodoPrueba.b=67;
 		metodoPrueba.sumar();
+		int resultadoSuma=metodoPrueba.sumaConRetorno();
+		System.out.println(resultadoSuma);
+		double multiplicacion=metodoPrueba.multiplicacionConArgumentos(16, 11.5);
+		System.out.println("El resultado de la multiplicacion es "+multiplicacion);
+	
 	}
-	
-	
 }
