@@ -1,10 +1,11 @@
 package com.gatitos;
 
 public interface Mascota {
-	public boolean isAdoptado();
-	public int getIdMascota();
+	static int[] id=new int[1];
+	boolean isAdoptado();
+	int getIdMascota();
 	public static int creaId() {
-		int id=0;
-		return id;
+		id[0]=1+id[0];
+		return id[0];
 	}
 }

@@ -5,6 +5,7 @@ public class PruebaGato {
 		Gato g=new Gato();
 		Gato g1=new Gato();
 		Gato g2=new Gato();
+		g=new Gato();
 		//g.nombre="taco";
 		//g.patas=3;
 		g.setPatas(5);
